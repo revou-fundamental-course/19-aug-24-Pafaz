@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP._lCyj17nl8vM5u_F7IOHSAHaHa?rs=1&pid=ImgDetMain" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <img src="https://th.bing.com/th/id/OIP._lCyj17nl8vM5u_F7IOHSAHaHa?rs=1&pid=ImgDetMain" alt="logo">
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#fac">Our Profile</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="banner">
+                <div class="position">
+                    <h2>Hi <span id="name">there</span>, Welcome to my Website!</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit totam culpa ea, laboriosam pariatur deserunt </p>
+                    <button onclick="setName()">Ubah Nama Kamu!</button>
+                </div>
+                <div class="banner-image image-1"></div>
+                <div class="banner-image image-2"></div>
+                <div class="banner-image image-3"></div>
+            </div>
+        </section>        
+        
+            <!-- Our Profile -->
+        <section class="fac" id="fac">
+            <div class="position">
+                <h2>Our Facilitation</h2>
+                <div class="facdiv">
+                    <div>
+                        <img class="profile" src="https://th.bing.com/th/id/OIP._lCyj17nl8vM5u_F7IOHSAHaHa?rs=1&pid=ImgDetMain" alt="logo">
+                        <p>This is my profile</p>
+                    </div>
+
+                    <div>
+                        <img class="profile" src="https://th.bing.com/th/id/OIP._lCyj17nl8vM5u_F7IOHSAHaHa?rs=1&pid=ImgDetMain" alt="logo">
+                        <p>This is my profile</p>
+                    </div>
+
+                    <div>
+                        <img class="profile" src="https://th.bing.com/th/id/OIP._lCyj17nl8vM5u_F7IOHSAHaHa?rs=1&pid=ImgDetMain" alt="logo">
+                        <p>This is my profile</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Message -->
+        <section class="message" id="message">
+            <div class="contact">
+                <h2>Message Us</h2>
+                <form name="messageForm"  id="myForm" >
+                    <div class="form-group">
+                        <label for="name-message">Nama</label>
+                        <input type="text" name="name-message" id="name-message" placeholder="Masukkan Nama">
+                    </div>
+                    <p id="error-name-message"></p>
+
+                    <div class="form-group">
+                        <label for="tanggal-message">Tanggal Lahir</label>
+                        <input type="date" name="tanggal-message" id="tanggal-message">
+                    </div>
+                    <p id="error-tanggal-message"></p>
+
+                    <div class="form-group">
+                        <label for="jk-message">Jenis Kelamin</label>
+                        <select id="jk-message" name="jk-message">
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option value="laki-laki">Laki - Laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <p id="error-jk-message"></>
+
+                    <div class="form-group">
+                        <label for="message-message">Pesan</label>
+                        <textarea name="message-message" id="message-message" cols="30" rows="10" placeholder="Masukkan Pesan"></textarea>
+                    </div>
+                    <p id="error-message-message"></p>
+
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+
+            <div class="hasil">
+                <div class="mapping">
+                    <h4>Current Date :</h4>
+                    <p id="hasil-date"></p>
+                </div>
+
+                <div class="pad">
+                    <div class="map">
+                        <h4>Nama :</h4>
+                        <p id="hasil-name"></p>
+                    </div>
+
+                    <div class="map">
+                        <h4>Tanggal Lahir:</h4>
+                        <p id="hasil-tanggal"></p>
+                    </div>
+
+                    <div class="map">
+                        <h4>Jenis Kelamin:</h4>
+                        <p id="hasil-jk"></p>
+                    </div>
+
+                    <div class="map">
+                        <h4>Pesan:</h4>
+                        <p id="hasil-message"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SEFC. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

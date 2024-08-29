@@ -1,0 +1,290 @@
+/* menghilangkan margin dan padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    height : 70px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+header {
+    display : flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+nav ul {
+    display : flex;
+    list-style-type: none;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+nav li {
+    border: .5px solid;
+    border-right: none;
+    padding: 5px 20px;
+}
+
+nav li:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+nav ul li:last-child {
+    border-right: .5px solid;   
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.hero {
+    border-bottom: 1px solid;
+    min-height: 600px;
+}
+.hero button {
+    padding: 5px;
+    border-style: .5px solid;
+    border-radius: 3px;
+}
+
+.hero button:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.banner-image {
+    margin-top: 50px;
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.image-1 {
+    background-image: url('https://img.freepik.com/free-vector/seamless-geometric-pattern-gray-background-vector_53876-136679.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
+}
+
+.image-2 {
+    background-image: url('https://img.freepik.com/free-photo/white-grey-tile-wall-high-resolution-wallpaper-brick-seamless-texture-interior-background_1258-72185.jpg?t=st=1724862262~exp=1724865862~hmac=b3852384e1197b793c31d1f6b9c14f7fa00b59ccfda3d21da48834d8d4d47ebe&w=740');
+}
+
+.image-3 {
+    background-image: url('https://img.freepik.com/free-vector/geometrical-seamless-rounded-diagonal-stripe-pattern-background-vector-graphic-design_1164-1383.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
+}
+
+.position{
+    padding-top: 30px;
+    margin-left: 120px;
+    }
+
+.fac {
+    border-bottom: 1px solid;
+}
+
+.fac div svg{
+    height: 150px;
+}
+
+.facdiv {
+    padding: 20px 30px 30px 50px;
+    display: flex;
+    /* background-color: blue; */
+}
+
+.profile{
+    width: 180px;
+}
+
+.facdiv div{
+    margin-right: 80px;
+    text-align: center;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    padding: 20px 30px 30px 120px;
+    min-height: 400px;
+    min-width: 40%;
+
+}
+.contact p{
+    color: crimson;
+    margin-left: 7rem;
+    font-size: small;
+    margin-top: -5px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: baseline;
+}
+
+.form-group label {
+    min-width: 100px;
+    margin-right: 2px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    margin-left: 5px;
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+.submit {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hasil{
+    margin: 100px;
+    text-align: start;
+    border: 1px solid; 
+    width: 500px;
+    border-radius: 5px;
+}
+
+.mapping{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.map {
+    padding-left: 10px;
+    display: flex;
+    margin-left: 20px;  
+}
+
+.map h4{
+    margin: 0 ;
+}
+
+.mapping h4{
+    margin: 0 ;
+}
+.map p {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.mapping p {
+    margin-left: 10px;
+    margin-top: 0;
+}
+.pad{
+    padding-top: 20px;
+}
+
+footer {
+    border-top: 1px solid;
+    text-align: end;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header img {
+        width: 10%;
+    }
+
+    .hero {
+        min-height: 400px; /* Menurunkan tinggi minimum untuk perangkat yang lebih kecil */
+    }
+
+    .position {
+        top: 40%; /* Menyesuaikan posisi konten agar tetap terlihat baik */
+        padding: 0 20px; /* Memberikan sedikit ruang pada sisi kiri dan kanan */
+    }
+
+    .banner-image {
+        background-attachment: scroll; /* Memastikan background tidak terlalu besar */
+    }
+
+    .facdiv {
+        flex-direction: column;
+    }
+
+    .message {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+    }
+    header img {
+        width: 20%;
+        padding-left: 35%;
+    }
+
+    .hero {
+        min-height: 300px; /* Menurunkan tinggi minimum untuk perangkat yang lebih kecil */
+    }
+
+    .position {
+      margin: 0;
+
+        padding: 0 20px; /* Memberikan sedikit ruang pada sisi kiri dan kanan */
+    }
+
+    .banner-image {
+        background-attachment: scroll; /* Memastikan background tidak terlalu besar */
+    }
+
+    .facdiv {
+        flex-direction: column;
+        padding-left: 20%;
+    }
+
+    .message {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding: 0;
+        min-height: 400px;
+        min-width: 100%;
+    }
+    .hasil {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+}
